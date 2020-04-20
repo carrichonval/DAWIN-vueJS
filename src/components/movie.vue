@@ -3,7 +3,7 @@
         <b-card
             :title="film.titre.toUpperCase()"
             sub-title="Synopsis :"
-            img-src="https://picsum.photos/600/300/?image=25"
+            :img-src="film.poster"
             class="mb-2"
         >
             <b-card-text>

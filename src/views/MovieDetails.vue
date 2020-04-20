@@ -62,6 +62,15 @@
         </b-col>
     </b-row>
     <b-row class="mt-3">
+        <b-col md="1">Poster</b-col>
+        <b-col md="2">
+            <b-form-input disabled v-model="film.poster"></b-form-input>
+        </b-col>
+        <b-col md="4">
+            <b-img :src="film.poster" style="position:absolute;" fluid alt="Responsive image"></b-img>
+        </b-col>
+    </b-row>
+    <b-row class="mt-3">
         <router-link :to="{path:'/movie/'+this.film.id+'/edit'}"> <b-button class="mr-3 ml-3" variant="primary">Modifier le film</b-button></router-link>
         <router-link :to="{path:'/'}"> <b-button variant="danger" v-on:click="deleteFilm(film.id)">Supprimer</b-button></router-link>
     </b-row>     

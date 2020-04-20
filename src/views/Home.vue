@@ -73,7 +73,7 @@ export default {
                             return this.shared_data.films
                         }
                         else{
-                            return this.shared_data.films.filter( film => film.realisateur.toLowerCase() == this.filtre.toLowerCase())
+                            return this.shared_data.films.filter( film => film.realisateur.name.toLowerCase() == this.filtre.toLowerCase())
                         }
 
                     case "langue":

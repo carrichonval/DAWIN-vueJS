@@ -62,6 +62,15 @@
         </b-col>
     </b-row>
     <b-row class="mt-3">
+        <b-col md="1">Poster</b-col>
+        <b-col md="2">
+            <b-form-input v-model="film.poster"></b-form-input>
+        </b-col>
+        <b-col md="4">
+            <b-img :src="film.poster" style="position:absolute;" fluid alt="Responsive image"></b-img>
+        </b-col>
+    </b-row>
+    <b-row class="mt-3">
         <router-link :to="{path:'/'}"> <b-button class="ml-3" variant="primary" v-on:click="saveEdit()">Enregistrer les modifications</b-button></router-link>
     </b-row>     
        

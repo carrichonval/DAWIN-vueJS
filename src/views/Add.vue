@@ -60,6 +60,12 @@
            <b-form-select v-model="newFilm.note" :options="notes"></b-form-select>
         </b-col>
     </b-row>
+    <b-row class="mt-3">
+        <b-col md="1">Poster</b-col>
+        <b-col md="2">
+            <b-form-input v-model="newFilm.poster"></b-form-input>
+        </b-col>
+    </b-row>
     <router-link :to="{path:'/'}"> <b-button variant="success" v-on:click="ajouterFilm()">Ajouter le film</b-button></router-link>
 </b-container>
 </template>
@@ -71,7 +77,7 @@ export default {
     data(){
     return{
             shared_data: window.shared_data,
-            newFilm:{id:'',titre: '', annee: '',langue:'', realisateur: {name:'',nationalite:'',birthday:''}, synops: '',genre:'', seen : false, note:''},
+            newFilm:{id:'',titre: '', annee: '',langue:'', realisateur: {name:'',nationalite:'',birthday:''}, synops: '',genre:'', seen : false, note:'',poster:''},
             genres:[
                 { value: "Action", text: 'Action' },
                 { value: "Romance", text: 'Romance' },
