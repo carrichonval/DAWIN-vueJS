@@ -1,3 +1,8 @@
+<!--
+    Page principale avec la liste des films sous formes de cartes en utilisant le component Movie
+    Ainsi que la barre de recherche
+-->
+
 <template>
     <b-container fluid class="bv-example-row">
         <router-link :to="{path:'/add'}"> <b-button variant="primary" class="mt-3 mb-3">Ajouter un film</b-button></router-link>
@@ -26,6 +31,10 @@
 
 <script>
 import Movie from "../components/movie";
+
+/*
+    Contient la méthode de recherche d'un film
+*/
 
 export default {
     name:"home",

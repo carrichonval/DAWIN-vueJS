@@ -1,3 +1,5 @@
+<!--Composant movie qui correspond à un film sur la page d'accueil-->
+
 <template>
     <div class="movie">
         <b-card
@@ -34,3 +36,4 @@ export default {
 }
 </script>
 
+<!--Dans les props on récupère l'object film et son index, et dans les data on récupère l'image de l'étoile pour la note-->

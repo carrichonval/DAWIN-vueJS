@@ -1,3 +1,8 @@
+<!--
+Composant pour l'édition d'un film.
+Comprend tout le formulaire de modification.
+-->
+
 <template>
 <b-container fluid class="bv-example-row">
         <router-link :to="{path:'/movie/'+film.id}"> <b-button class="mt-3">Retour</b-button></router-link>
@@ -79,7 +84,10 @@
 
 
 <script>
-
+/*
+    Dans les datas on à la liste des genres de film et des notes possibles.
+    Ainsi que la méthode pour sauvegarder les modifications du film.
+*/
 export default {
     name:"edit",
     data(){

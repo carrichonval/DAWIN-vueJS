@@ -1,3 +1,7 @@
+<!--
+    Page affichant tout les informations d'un film ainsi que des boutons pour supprimer ou aller modifier le film en question.
+-->
+
 <template>
 <b-container fluid class="bv-example-row">
         <router-link :to="{path:'/'}"> <b-button class="mt-3">Retour</b-button></router-link>
@@ -80,7 +84,10 @@
 
 
 <script>
-
+/*
+    Contient la liste des notes possibles et des genres. (On pourrait ici s'en passer car c'est simplement un affichage)
+    Contient également la méthode permettant de sauvegader la modification d'un film ou de le supprimer.
+*/
 export default {
     name:"moviedetails",
     data(){

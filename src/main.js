@@ -10,8 +10,12 @@ Vue.config.productionTip = false
 Vue.use(IconsPlugin)
 Vue.use(BootstrapVue)
 
+/*----------------------------
+Window.shared_data permet de transmettre des données n'importe où dans le projet
+En l'occurence, ici les films
+----------------------------*/
+
 window.shared_data = {
-  mavariable: 'Test',
   films: [
     {
       id:0,

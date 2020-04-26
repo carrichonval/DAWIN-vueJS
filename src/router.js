@@ -7,6 +7,9 @@ import MovieDetails from './views/MovieDetails'
 
 Vue.use(Router);
 
+/*----------------------------
+Router permettant pour un chemin, de retourner un composant
+----------------------------*/
 export default new Router({
     routes:[
         {

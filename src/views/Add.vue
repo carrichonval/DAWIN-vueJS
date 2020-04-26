@@ -1,3 +1,8 @@
+<!--
+Composant pour l'ajout d'un film.
+Comprend tout le formulaire.
+-->
+
 <template>
 <b-container fluid class="bv-example-row ">
     <router-link :to="{path:'/'}"> <b-button class="mt-3">Retour</b-button></router-link>
@@ -71,7 +76,10 @@
 </template>
 
 <script>
-
+/*
+    Dans les datas on à la liste des genres de film et des notes possibles.
+    Ainsi que la méthode ajouter film.
+*/
 export default {
     name:"add",
     data(){
