@@ -1,11 +1,11 @@
 # projectvue
 
-## Project setup
+## Installer les librairies
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Lancer le projet
 ```
 npm run serve
 ```
